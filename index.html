@@ -18,43 +18,48 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Dino Tech IT Solutions</title>
+    <link rel="icon" type="image/x-icon" href="images/Logo-colored-svg.svg" />
   </head>
   <body>
-    <div
-      class="bg-image first-page"
-      style="background-image: url('/images/background.png')"
-    >
-      <div class="navbar">
-        <div><a href="#">DINO TECH</a></div>
-        <div class="nav-list">
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Our Team</a></li>
-        </div>
-        <div class="nav-contact"><a href="#">Contact us</a></div>
-      </div>
+    <div class="bg-image">
+      <!-- Navbar -->
+      <header class="header">
+        <nav class="navbar navbar-expand-md header-nav">
+          <div class="container">
+            <a class="navbar-brand text-white" href="#"> <img src="images/Logo-colored-svg.svg" style="width: 50px;">DINO TECH</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
 
-      <div class="hero-content">
-        <div class="left-text">Left text</div>
-        <div class="middle-content">
-          <img src="./images/hero-logo.svg" alt="hero logo" />
-          <h6 style="text-align: center">Shesh kaba</h6>
-        </div>
-        <div class="right-text">Right Text</div>
-      </div>
-
-      <img src="./images/arrow-down.svg" alt="shesh" style="margin-top: 7%" />
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Our Team</a>
+                </li>
+              </ul>
+                <button class="btn navbar-brand mr-auto text-white" id="btn-contact">Contact Us</button>
+              
+            </div>
+          </div>
+        </nav>
+      </header>
+     
     </div>
-
-    <div
-      class="bg-image second-page"
-      style="background-image: url('/images/1.jpg')"
-    ></div>
-    <div
-      class="bg-image third-page"
-      style="background-image: url('/images/2.jpg')"
-    ></div>
 
     <!-- Bootstrap script cdn -->
     <script
