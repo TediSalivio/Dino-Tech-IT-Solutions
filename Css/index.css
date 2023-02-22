@@ -4,7 +4,7 @@
   --color-3: #ffa226;
   --color-4: #e16503;
   --color-5: #951a01;
-  --main-font: "Poppins", sans-serif;
+  --main-font: 'Poppins', sans-serif;
 }
 
 * {
@@ -14,9 +14,6 @@
   font-family: var(--main-font);
 }
 
-html, body {
-  line-height: 1.5;
-}
 
 /* background image css */
 
@@ -24,33 +21,27 @@ html, body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
 }
 
 /* all page images */
 
-#page-one {
+#first-page {
   background-image: url('/images/background.png'); 
-  overflow: hidden;
-  height: 100vh;
+  min-height: 100vh;
+
 }
 #second-page {
-  background: #010103;
-  overflow: hidden;
-}
+  background-color: #010103;
+  background-image: url('/images/orange-blur.svg');
+  min-height: 100vh;
 
+}
 
 /* Navbar section */
 
-
-
-div::-webkit-scrollbar {
-  display: none;
-}
-
 .navbar {
   font-size: 1.3rem;
-  min-height: 12vh;
+  min-height: 10vh;
 }
 
 #btn-contact {
@@ -70,7 +61,7 @@ div::-webkit-scrollbar {
 
 .nav-item .nav-link{
   color: white;
-  font-weight: 100;
+  font-weight: 500;
 }
 
 .nav-item .nav-link:hover{
@@ -113,6 +104,40 @@ div::-webkit-scrollbar {
   animation: fadeDown 2s ease forwards infinite;
 }
 
+/* About us css */
+
+.about-us {
+  margin-top: 15%;
+}
+
+.about-content {
+  gap: 10%;
+}
+
+.about-title, .about-description {
+  color: white;
+  line-height: 36px;
+}
+
+.about-title {
+  font-size: 3rem;
+  margin-bottom: 5%;
+  font-weight: 900;
+
+  letter-spacing: 0.03em;
+}
+
+.about-right {
+  margin: auto;
+}
+
+.about-description {
+  text-align: justify;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+
 
 /* Arrow down animation */
 @keyframes fadeDown {
@@ -125,4 +150,5 @@ div::-webkit-scrollbar {
     transform: translateY(0);
   }
 }
+
 
