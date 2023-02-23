@@ -43,6 +43,11 @@
   min-height: 100vh;
 }
 
+#fifth-page {
+  background-color: #010103;
+  min-height: 100vh;
+}
+
 #sixth-page {
   background-color: #010103;
   min-height: 100vh;
@@ -211,6 +216,21 @@
 .card .card-title {
   font-weight: 700;
   font-size: 1.5em;
+}
+
+/* Mission Vision */
+.mission, .vision {
+  color: white;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.mission {
+  border-bottom:4px solid #E93F0B;
+}
+
+.vision {
+  border-bottom:4px solid #E93F0B;
 }
 
 /* Projects */
