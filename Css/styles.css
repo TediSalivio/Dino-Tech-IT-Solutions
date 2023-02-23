@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Noto Sans HK', sans-serif;
+  background: black;
+}
+.container{
+  float:right;
+}
+.slider {
+  margin-bottom: 30px;
+  position: relative;
+}
+/*
+.slider .owl-item.active.center .slider-card {
+  transform: scale(1.15);
+  opacity: 1;
+  background: #ff9966; /* fallback for old browsers */
+  /*background: -webkit-linear-gradient(to bottom, #ff5e62, #ff9966); /* Chrome 10-25, Safari 5.1-6 */
+  /*background: linear-gradient(to bottom, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /*color: #fff;
+}*/
+.slider-card {
+  /*background: #fff;*/
+  padding: 0px 0px;
+  margin: 10px -15px 90px 0px;
+  height: 435px;
+  width: 330px;
+  border-radius: 20px;
+  box-shadow: 0 15px 45px -20px rgb(0 0 0 / 73%);
+  transform: scale(0.9);
+  transition: all 0.3s;
+}
+.slider-card img {
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+}
+.description-card{
+  border-radius: 0px 0px 20px 20px;
+  backdrop-filter: blur(5px);
+  bottom: 0;
+  width: 100%;
+  height: 130px;
+  position: absolute;
+}
+.description-card .description{
+  font-size: 30px;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+}
+.content{
+  position: relative;
+  bottom: 120px;
+  text-align: justify;
+  color: white;
+} 
+.offer{
+  position: relative;
+  margin-top: -50px;
+  margin-left: -100px;
+}
+.services{
+  font-family: 'Poppins',sans-serif;
+  font-size: 100px;
+  letter-spacing: 0.12em;
+  color: white;
+}
+.services:before{
+  position: absolute;
+  font-size: 100px;
+  content: attr(data-text);
+  top: 0.37em;
+  left: 0.83em;
+  color: transparent;
+  -webkit-text-stroke: 2px orangered;
+  z-index: -1;
+}
+
+/*mobile*/
+@media only screen and (max-width: 768px) {
+  .slider-card{
+    height:450px;
+    margin: auto;
+    margin-top: 20px;
+    width: 320px;
+}
+.description-card{
+  position: absolute;
+  height: 150px;
+  width: 100%;
+}
+.content{
+  position: relative;
+  bottom: auto;
+}
+.offer{
+  position: relative;
+  margin-top: auto;
+  margin-left: auto;
+}
+.services{
+  font-family: 'Poppins',sans-serif;
+  font-size: 60px;
+  letter-spacing: 0.12em;
+  color: white;
+}
+
+.services:before{
+  position: absolute;
+  font-size: 60px;
+  content: attr(data-text);
+  top: 0.37em;
+  left: 0.83em;
+  color: transparent;
+  -webkit-text-stroke: 2px orangered;
+  z-index: -1;
+}
+}
+
+
+/*mobile*/
+@media only screen and (max-width: 376px) {
+  .slider-card{
+    height:350px;
+    margin-right: 50px;
+    width: 260px;
+}
+.description-card{
+  position: absolute;
+  height: 120px;
+  width: 100%;
+}
+.description-card .description{
+  font-size: 20px;
+  text-align: center;
+}
+.content{
+  position: relative;
+  bottom: auto;
+} 
+.offer{
+  position: relative;
+  margin-top: auto;
+  margin-left: auto;
+}
+.services{
+  font-family: 'Poppins',sans-serif;
+  font-size: 55px;
+  letter-spacing: 0.12em;
+  color: white;
+}
+
+.services:before{
+  position: absolute;
+  font-size: 55px;
+  content: attr(data-text);
+  top: 0.37em;
+  left: 0.83em;
+  color: transparent;
+  -webkit-text-stroke: 2px orangered;
+  z-index: -1;
+}
+}
+
+

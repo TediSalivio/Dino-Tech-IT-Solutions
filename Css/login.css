@@ -21,8 +21,6 @@ h1 {
 
 }
 
-
-
 .login-root {
     background: #fff;
     display: flex;
@@ -129,7 +127,6 @@ h1 {
 .formbg {
     margin: 0px auto;
     width: 100%;
-   
     max-width: 448px;
     background: #181823;
     border-radius: 15px;
@@ -177,6 +174,10 @@ input[type="submit"] {
     cursor: pointer;
     outline: inherit;
     border: none;
+}
+
+input[type="submit"]:hover {
+    color: #181823;
 }
 
 

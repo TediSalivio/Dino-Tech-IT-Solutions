@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Css Link -->
     <link rel="stylesheet" href="./Css/index.css" />
     <!-- Google font -->
@@ -15,6 +16,9 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -27,7 +31,7 @@
     <link rel="icon" type="image/x-icon" href="images/Logo-colored.svg" />
   </head>
   <body>
-    <!-- Page one -->
+    <!-- First page -->
     <section class="bg-image" id="first-page">
       <!-- Navbar -->
       <header>
@@ -43,7 +47,7 @@
                   <a class="nav-link" href="#second-page">About us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="services.html">Services</a>
+                  <a class="nav-link" href="#third-page">Services</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="team.html">Our Team</a>
@@ -71,29 +75,28 @@
             </div>
           </div>
           <div class="hero-img d-flex flex-column align-items-center">
-            <img class="img-fluid" src="images/hero-logo.svg">
-            <h2 class="text-white mb-5 mt-0 align-self-center">Software Development Services</h2>
-            <a href="#second-page" class="arrow-down mb-5"><img src="images/arrow-down.svg" style="width: 50px;"></a>
+            <img class="img-fluid" src="images/hero-logo.svg" style="z-index: 3;">
+            <h2 class="text-white mb-5 mt-0 align-self-center" style="z-index: 3;">Software Development Services</h2>
+            <a href="login.html" class="arrow-down mb-5"><img src="images/arrow-down.svg" style="width: 50px;"></a>
           </div>
         </div>
-        </div>
-      </section>
+      </div>
     </section>
      
-    <!-- Page two -->
-    <section class="bg-image overflow-auto" id="second-page">
+    <!-- Second page -->
+    <section class="bg-image overflow-auto" id="second-page" >
       <img class="img-fluid" src="images/wave-lines-01.svg" style="position: absolute; left:0; margin-top: -200px; z-index: 1;">
       <section class="about-us">
         <div class="container">
           <div class="about-content row">
-            <div class="about-left col">
+            <div class="about-left col" style="z-index: 3;">
               <div class="about-title">What is <span style="color: #eb502a;">Dino Tech?</span></div>
-              <div class="about-description">
+              <div class="about-description" >
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae autem minus iusto velit enim placeat eius possimus voluptatibus aspernatur voluptas beatae modi, nobis impedit ut soluta laudantium porro iste dolores.</p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae autem minus iusto velit enim placeat eius possimus voluptatibus aspernatur voluptas beatae modi, nobis impedit ut soluta laudantium porro iste dolores.</p>
               </div>
             </div>
-            <div class="about-right text-center mb-5 col" >
+            <div class="about-right text-center mb-5 col" style="z-index: 3;">
               <img src="images/black-dino-box.svg">
             </div>
           </div>
@@ -101,17 +104,214 @@
       </section>
     </section>
     
-    <div class="bg-image" id="third-page">
-      <img class="img-fluid" src="images/wave-lines-02.svg" style="position: absolute; right:0; margin-top: -200px; z-index: 1;">
-      
-    </div>
+    <!-- Third page -->
+    <section class="bg-image overflow-auto" id="third-page">
+      <div class="container">
+        <!-- services image title -->
+        <img class="img-fluid" width="650" height="650" src="images/Services-text-svg.svg" style="z-index: 2; position: relative;">
+        <img class="img-fluid" src="images/wave-lines-02.svg" style="position: absolute; right:0; margin-top: -200px; z-index: 1;">
+        <section id="slider" class="pt-5">
+        <!-- image slider -->
+          <div class="slider">
+            <div class="owl-carousel">
+              <div class="slider-card">
+                <img src="images/Services Images/CARD 1.png">
+                <div class="description-card">
+                  <h5 class="description"><b>Graphics Design</b></h5>
+                </div>
+              </div>
 
+              <div class="slider-card">
+                <img src="images/Services Images/CARD 2.png">
+                <div class="description-card">
+                  <h5 class="description"><b>Formatting of Laptop</b></h5>
+                </div>
+              </div>
 
-    <!-- Bootstrap script cdn -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+              <div class="slider-card">
+                <img src="images/Services Images/CARD 3.png">
+                <div class="description-card">
+                  <h5 class="description"><b>Computer System Repair</b></h5>
+                </div>
+              </div>
+
+              <div class="slider-card">
+                <img src="images/Services Images/CARD 4.png">
+                <div class="description-card">
+                  <h5 class="description"><b>Installation of Software</b></h5>
+                </div>
+              </div>
+
+             <div class="slider-card">
+                <img src="images/Services Images/CARD 5.png">
+                <div class="description-card">
+                  <h5 class="description"><b>Creation of Database and Website Application</b></h5>
+                </div>
+              </div>
+
+              <div class="slider-card">
+                <img src="images/Services Images/CARD 6.png">
+                <div class="description-card">
+                  <h5 class="description"><b>CCTV Installation</b></h5>
+                </div>
+              </div>
+
+              <div class="slider-card">
+                <img src="images/Services Images/CARD 7.png">
+                <div class="description-card">
+                  <h5 class="description"><b>Seminars and Trainings</b></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- services description -->
+            <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit
+              minima.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit
+              minima. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit
+              minima.
+            </p>
+        </section>
+      </div>
+    </section>
+
+     <!-- Page four -->
+     <section class="bg-image overflow-auto" id="fourth-page">
+      <!-- our team image container -->
+      <img class="img-fluid" src="images/wave-lines-01.svg" style="position: absolute; left:0; margin-top: -200px; z-index: 1;">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="card" style="width: 18rem; z-index: 3; background-color: transparent; border: none;">
+                <img src="images/black-dino-box.svg" class="card-img-top img-fluid">
+                <div class="card-body">
+                  <h5 class="card-title">Adrian Evanculla</h5>
+                  <p class="card-text">CEO / President</p>
+                </div>
+              </div>
+            </div>
+            <div class="col" >
+              <div class="card" style="width: 18rem; z-index: 3; background-color: transparent; border: none;">
+                <img src="images/black-dino-box.svg" class="card-img-top img-fluid">
+                <div class="card-body">
+                  <h5 class="card-title">Adrian Evanculla</h5>
+                  <p class="card-text">CEO / President</p>
+                </div>
+              </div>
+            </div>
+            <div class="col" >
+              <div class="card" style="width: 18rem; background-color: transparent; border: none;">
+                <img src="images/black-dino-box.svg" class="card-img-top img-fluid">
+                <div class="card-body">
+                  <h5 class="card-title">Adrian Evanculla</h5>
+                  <p class="card-text">CEO / President</p>
+                </div>
+              </div>
+            </div>
+            <div class="col" >
+              <div class="card" style="width: 18rem; background-color: transparent; border: none;">
+                <img src="images/black-dino-box.svg" class="card-img-top img-fluid">
+                <div class="card-body">
+                  <h5 class="card-title">Adrian Evanculla</h5>
+                  <p class="card-text">CEO / President</p>
+                </div>
+              </div>
+            </div>
+            <div class="col" >
+              <div class="card" style="width: 18rem; background-color: transparent; border: none;">
+                <img src="images/black-dino-box.svg" class="card-img-top img-fluid">
+                <div class="card-body">
+                  <h5 class="card-title">Adrian Evanculla</h5>
+                  <p class="card-text">CEO / President</p>
+                </div>
+              </div>
+            </div>
+            <div class="col" >
+              <div class="card" style="width: 18rem; background-color: transparent; border: none;">
+                <img src="images/black-dino-box.svg" class="card-img-top img-fluid">
+                <div class="card-body">
+                  <h5 class="card-title">Adrian Evanculla</h5>
+                  <p class="card-text">CEO / President</p>
+                </div>
+              </div>
+            </div>
+            <div class="col" >
+              <div class="card" style="width: 18rem; background-color: transparent; border: none;">
+                <img src="images/black-dino-box.svg" class="card-img-top img-fluid">
+                <div class="card-body">
+                  <h5 class="card-title">Adrian Evanculla</h5>
+                  <p class="card-text">CEO / President</p>
+                </div>
+              </div>
+            </div>
+            <div class="col" >
+              <div class="card" style="width: 18rem; background-color: transparent; border: none;">
+                <img src="images/black-dino-box.svg" class="card-img-top img-fluid">
+                <div class="card-body">
+                  <h5 class="card-title">Adrian Evanculla</h5>
+                  <p class="card-text">CEO / President</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Sixth page -->
+    <section class="bg-image overflow-auto" id="sixth-page">
+      <!-- Our project banner -->
+      <div class="our-project-banner" style="background-size: cover; background-repeat: no-repeat;">
+        <img class="img-fluid" src="images/OurProject-banner-svg.svg">
+      </div>
+      <!-- Projects container -->
+      <section class="projects">
+        <div class="container">
+          <div class="see-doing mb-5 text-white text-center" style="font-size: 2rem;margin-top: -12%; font-weight:600 ;">See what we are doing</div>
+          <div class="projects-content row align-items-center mb-5">
+            <div class="projects-left text-center col">
+              
+              <img class="img-fluid rounded" src="images/luffy.jpg" >
+            </div>    
+            <div class="projects-right mt-5 text-center col">
+              <div class="projects-title">
+                LTO Management System
+              </div>
+              <div class="projects-description col mb-5">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur omnis architecto quia optio neque saepe ea numquam ducimus ad distinctio. Harum amet impedit quas deleniti neque dolore expedita libero veniam.
+              </div>
+              <button class="btn-projects btn text-white mx-auto mb-5"> <a href="#">See Project</a></button>
+            </div>
+          </div>
+
+          <div class="projects-content row align-items-center">
+            <div class="projects-left mb-5 text-center col">
+              <img class="img-fluid rounded" src="images/luffy.jpg" >
+            </div>
+            <div class="projects-right mt-5 text-center col">
+              <div class="projects-title">
+                LTO Management System
+              </div>
+              <div class="projects-description col mb-5">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur omnis architecto quia optio neque saepe ea numquam ducimus ad distinctio. Harum amet impedit quas deleniti neque dolore expedita libero veniam.
+              </div>
+              <button class="btn-projects btn text-white mx-auto mb-5"> <a href="#">See Project</a></button>
+            </div>
+          </div>
+          <h4 class="view-all mx-auto text-center mb-5"><a href="#" class="text-white" style="text-decoration: none; font-weight: 700;">View All</a></h4>
+        </div>
+      </section>
+    </section>
+
+  <!-- Bootstrap script cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/script.js"></script>
   </body>
 </html>
