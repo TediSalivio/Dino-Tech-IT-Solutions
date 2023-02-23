@@ -141,8 +141,13 @@
 }
 
 /*Services*/
-#third-page .container{
-  float:right;
+
+
+@media only screen and (min-width: 1800px) {
+  #third-page .container{
+    margin-left: 15%;
+    float: none;
+  }
 }
 .slider {
   margin-top: -60px;
@@ -192,7 +197,7 @@
   bottom: 120px;
   text-align: justify;
   color: white;
-  margin-right: 12%;
+
   font-size: 1.3rem;
 } 
 
