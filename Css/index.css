@@ -45,7 +45,7 @@
 
 #fifth-page {
   background-color: #010103;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 #sixth-page {
@@ -219,19 +219,24 @@
 }
 
 /* Mission Vision */
-.mission, .vision {
+.mission-title, .vision-title {
   color: white;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 800;
-}
-
-.mission {
   border-bottom:4px solid #E93F0B;
 }
 
-.vision {
-  border-bottom:4px solid #E93F0B;
+.ms-title {
+  margin-top: 15%;
 }
+
+.ms-description {
+  text-align: justify;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
 
 /* Projects */
 .projects-left img {
