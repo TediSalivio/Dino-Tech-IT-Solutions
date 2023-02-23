@@ -53,6 +53,17 @@
   min-height: 100vh;
 }
 
+#seventh-page {
+  background-image: url('/images/Contact-us-banner.svg');
+  background-size: cover;
+  min-height: 100vh;
+}
+
+#eight-page {
+  background-color: #010103;
+  min-height: 100vh;
+}
+
 /* Navbar section */
 .navbar {
   font-size: 1.3rem;
@@ -141,8 +152,6 @@
 }
 
 /*Services*/
-
-
 @media only screen and (min-width: 1800px) {
   #third-page .container{
     margin-left: 15%;
@@ -274,6 +283,25 @@
   color: white;
 }
 
+/* Footer */
+.footer {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.footer-list {
+  list-style: none;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-icons {
+  width: 65px;
+  gap: 10px;
+}
 
 /* Arrow down animation */
 @keyframes fadeDown {
@@ -318,6 +346,11 @@
     position: relative;
     bottom: auto;
     margin: auto;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
