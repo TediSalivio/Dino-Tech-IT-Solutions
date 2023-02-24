@@ -277,6 +277,20 @@
   color: white;
 }
 
+/*Contact form*/
+
+#btn-submit-form {
+  background-color: var(--color-2);
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+  width: 40%;
+}
+
+#btn-submit-form:hover {
+  transform: scale(1.15);
+  transition: 0.5s;
+}
+
 /* Footer */
 .footer {
   margin-top: 5%;
