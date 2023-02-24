@@ -58,21 +58,20 @@
             <div class="formbg">
               <div class="formbg-inner padding-horizontal--48">
                 <span class="padding-bottom--15" style="text-align: center;">Login your account</span>
-                <form id="stripe-login">
+                <form id="stripe-login" action="/Php/login.php" method="post">
                   <div class="field padding-bottom--24">
                     <label for="email">Email</label>
-                    <input type="email" name="email">
+                    <input type="email" name="email" id="email">
                   </div>
                   <div class="field padding-bottom--24">
                     <div class="grid--50-50">
                       <label for="password">Password</label>
-
                     </div>
-                    <input type="password" name="password">
+                    <input type="password" name="password" id="password">
                   </div>
                    
                   <div class="field padding-bottom--24">
-                    <input type="submit" name="submit" value="Continue">
+                    <input id="login" type="submit" name="submit" value="Continue">
                   </div>
                  
                 </form>
@@ -84,5 +83,59 @@
         </div>
       </div>
     </div>
+
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+  <script>
+    $(function() {
+
+      $('#login').click(function(e) {
+
+        let self = $(this);
+
+        e.preventDefault(); // prevent default submit behavior
+
+        self.prop('disabled', true);
+
+        var data = $('#stripe-login').serialize(); // get form data
+
+        // sending ajax request to login.php file, it will process login request and give response.
+        $.ajax({
+          url: 'Php/login.php',
+          type: "POST",
+          data: data,
+        }).done(function(res) {
+          res = JSON.parse(res);
+          if (res['status']) // if login successful redirect user to secure.php page.
+          {
+            location.href = "Php/secure.php"; // redirect user to secure.php location/page.
+          } else {
+
+            var errorMessage = '';
+            // if there is any errors convert array of errors into html string, 
+            //here we are wrapping errors into a paragraph tag.
+            console.log(res.msg);
+            $.each(res['msg'], function(index, message) {
+              errorMessage += '<div>' + message + '</div>';
+            });
+            // place the errors inside the div#error-msg.
+            $("#error-msg").html(errorMessage);
+            $("#error-msg").show(); // show it on the browser, default state, hide
+            // remove disable attribute to the login button, 
+            //to prevent multiple form submissions 
+            //we have added this attribution on login from submit
+            self.prop('disabled', false);
+          }
+        }).fail(function() {
+          alert("error");
+          console.log("Error ka po e")
+        }).always(function() {
+          self.prop('disabled', false);
+        });
+      });
+    });
+  </script>
+  
 </body>
 </html>

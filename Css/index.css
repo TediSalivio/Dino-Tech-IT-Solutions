@@ -386,7 +386,6 @@ color: #fff !important;
   cursor: pointer;
 }
 
-
 /*
 This following statements selects each category individually that contains an input element that is a checkbox and is checked (or selected) and chabges the background color of the span element.
 */
@@ -399,7 +398,6 @@ This following statements selects each category individually that contains an in
 .news input:checked + span{background-color: #8C1B1B;}
 .scifi input:checked + span{background-color: #AC9BD1;}
 .sports input:checked + span{background-color: #214A09;}
-
 
 .form-group {
 position: relative;
