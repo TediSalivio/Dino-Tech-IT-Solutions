@@ -369,6 +369,7 @@ display: block;
 position: absolute;
 display: none;
 color: #fff !important;
+
 }
 /* selects all of the text within the input element and changes the color of the text */
 .input_info label input + span{color: #fff;}
@@ -379,6 +380,7 @@ color: #fff !important;
   color: #ffffff;
   text-shadow: 0 0  6px rgba(0, 0, 0, 0.8);
 }
+
 
 .input_info input:hover + span{
   cursor: pointer;
