@@ -55,6 +55,7 @@ h1 {
 
 .box-root {
     box-sizing: border-box;
+    margin-top: 3%;
 }
 
 .flex-direction--column {
