@@ -83,7 +83,7 @@
 
               <ul class="navbar-nav text-center">
                 <button class="btn text-white mx-auto" id="btn-contact">
-                  <a href="contact.html">Contact Us</a>
+                  <a href="#seventh-page">Contact Us</a>
                 </button>
               </ul>
 
@@ -502,93 +502,116 @@
       </section>
     </section>
 
-    <!-- seventh page contact form-->
-    <section class="bg-image img-fluid overflow-auto" id="seventh-page">
-        <div class="container" style="display: flex; justify-content: end;">
-            <div class="contactus mb-5 mt-5">
-              <form action="https://formsubmit.co/tedidinotech@gmail.com" method="POST">
-              <h3 class="mb-4 text-white">I'm interested in</h3>
-              <ul class="ngc">
-                <li class="new-select">
-                  <div class="input_info action">
-                    <label>
-                      <input type="checkbox" value="Graphics Design" name="Interested1"><span>Graphics Design</span>
-                    </label>
-                  </div>
-                </li>
-    
-                <li class="new-select">
-                  <div class="input_info action">
-                    <label>
-                      <input type="checkbox" value="Formatting of Laptop" name="Interested2"><span>Formatting of Laptop</span>
-                    </label>
-                  </div>
-                </li>
-    
-                <li class="new-select">
-                  <div class="input_info action">
-                    <label>
-                      <input type="checkbox" value="Computer Repair" name="Interested3"><span>Computer Repair</span>
-                    </label>
-                  </div>
-                </li>
-                <li class="new-select">
-                  <div class="input_info action">
-                    <label>
-                      <input type="checkbox" value="Installation of Software" name="Interested4"><span>Installation of Software</span>
-                    </label>
-                  </div>
-                </li>
-                <li class="new-select">
-                  <div class="input_info action">
-                    <label>
-                      <input type="checkbox" value="Creation of Website" name="Interested5"><span>Creation of Website</span>
-                    </label>
-                  </div>
-                </li>
-                <li class="new-select">
-                  <div class="input_info action">
-                    <label>
-                      <input type="checkbox" value="CCTV Installation" name="Interested6"><span>CCTV Installation</span>
-                    </label>
-                  </div>
-                </li>
-                <li class="new-select">
-                  <div class="input_info action">
-                    <label>
-                      <input type="checkbox" value="Seminars and Trainings" name="Interested7"><span>Seminars and Trainings</span>
-                    </label>
-                  </div>
-                </li>
-                <li class="new-select">
-                  <div class="input_info action">
-                    <label>
-                      <input type="checkbox" value="Others" name="Interested8"><span>Others</span>
-                    </label>
-                  </div>
-                </li>
-              </ul>
-              <div class="form-group mt-5">
-                <input type="text" required="required" name="Name" id="uname"/>
-                <label for="input" class="control-label" >Your Name</label><i class="bar"></i>
+    <!-- seventh page 
+  id="frm" action="https://formsubmit.co/firstcaptcha1@gmail.com"
+  
+  Elactic onsubmit="sendContact(); reset(); return false; "
+-->
+  <section class="bg-image img-fluid overflow-auto" id="seventh-page">
+    <div class="container" style="display: flex; justify-content: end;">
+
+      <div class="contactus mb-5 mt-5">
+        <form onsubmit="sendContact(); reset(); return false;">
+          <h3 class="mb-4 text-white">I'm interested in</h3>
+          <ul class="ngc">
+            <li class="new-select">
+              <div class="input_info action">
+                <label>
+                  <input class="checkbox" type="checkbox" value="Graphics and Design"><span>Graphics <br>Design</span>
+                </label>
               </div>
-              <div class="form-group mt-5">
-                <input type="email" required="required" name="Email" id="uemail"/>
-                <label for="input" class="control-label">Your Email</label><i class="bar"></i>
+            </li>
+
+            <li class="new-select">
+              <div class="input_info action">
+                <label>
+                  <input class="checkbox" type="checkbox" value="Formatting of Laptop"><span>Formatting <br>of
+                    Laptop</span>
+                </label>
               </div>
-              <div class="form-group mt-5">
-                <input type="text" required="required" name="Message" id="umessage"/>
-                <label for="input" class="control-label">Tell us about the project</label><i class="bar"></i>
+            </li>
+
+            <li class="new-select">
+              <div class="input_info action">
+                <label>
+                  <input class="checkbox" type="checkbox" value="Computer Repair"><span>Computer <br>Repair</span>
+                </label>
               </div>
-              <div class="btn-send d-flex">
-                <button type="submit" class="text-white mx-auto mt-2" id="btn-submit-form">
-                  Send
-                </button>
+            </li>
+
+            <li class="new-select">
+              <div class="input_info action">
+                <label>
+                  <input class="checkbox" type="checkbox" value="Installation of Software"><span>Installation <br>of
+                    Software</span>
+                </label>
               </div>
-            </form>
-            </div>
-        </div>
-    </section>
+            </li>
+
+            <li class="new-select">
+              <div class="input_info action">
+                <label>
+                  <input class="checkbox" type="checkbox" value="Creation of Website"><span>Creation of
+                    <br>Website</span>
+                </label>
+              </div>
+            </li>
+
+            <li class="new-select">
+              <div class="input_info action">
+                <label>
+                  <input class="checkbox" type="checkbox" value="CCTV Installation"><span>CCTV <br>Installation</span>
+                </label>
+              </div>
+            </li>
+
+            <li class="new-select">
+              <div class="input_info action">
+                <label>
+                  <input class="checkbox" type="checkbox" value="Seminars and Trainings"><span>Seminars <br>and
+                    Trainings</span>
+                </label>
+              </div>
+            </li>
+
+            <li class="new-select">
+              <div class="input_info action">
+                <label>
+                  <input class="checkbox" type="checkbox" value="Others"><span>Others</span>
+                </label>
+              </div>
+            </li>
+          </ul>
+
+          <!--Getting Value of Multiple Checkbox-->
+          <textarea id="getVal" name="I'm interested in" hidden> </textarea>
+
+          <!-- Formsubmit.co
+          <input type="hidden" name="_template" value="box">
+          <input type="hidden" name="_autoresponse" value="Thank you for contacting us">-->
+
+          <div class="form-group mt-5">
+            <input type="text" required="required" name="Name" id="name"/>
+            <label for="input" class="control-label">Your Name</label><i class="bar"></i>
+          </div>
+          <div class="form-group mt-5">
+            <input type="email" required="required" name="Email" id="email"/>
+            <label for="input" class="control-label">Your Email</label><i class="bar"></i>
+          </div>
+          <div class="form-group mt-5">
+            <input type="text" required="required" name="Message" id="message"/>
+            <label for="input" class="control-label">Tell us about the project</label><i class="bar"></i>
+          </div>
+          <div class="btn-send d-flex">
+            <button class="btn-projects btn text-white mx-auto  mb-5" id="btnSubmit">
+              <a>Send</a>
+            </button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
 
     <!-- eigth page footer-->
     <section class="bg-image overflow-auto" id="eight-page">
@@ -658,5 +681,7 @@
     crossorigin="anonymous"></script>
     <script src="Js/owl.carousel.min.js"></script>
     <script src="Js/owl.script.js"></script>
+    <script src="Js/contact.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>

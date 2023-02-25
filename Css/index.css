@@ -332,6 +332,7 @@
 }
 
 
+/*Contact Us*/
 
 /*Contact*/
 #seventh-page{
@@ -358,7 +359,12 @@ margin: 3px;
 padding: 5px;
 font-size: 10px;
 }
-
+/*
+.cat label {
+float: center; line-height: 3.0em;
+width: 8.0em; height: 3.0em;
+}
+*/
 .input_info label span {
 text-align: center;
 padding: 3px 0;
@@ -369,7 +375,6 @@ display: block;
 position: absolute;
 display: none;
 color: #fff !important;
-
 }
 /* selects all of the text within the input element and changes the color of the text */
 .input_info label input + span{color: #fff;}
@@ -382,22 +387,12 @@ color: #fff !important;
 }
 
 
-.input_info input:hover + span{
-  cursor: pointer;
-}
-
 /*
 This following statements selects each category individually that contains an input element that is a checkbox and is checked (or selected) and chabges the background color of the span element.
 */
 
 .action input:checked + span{background-color: #F75A1B;}
-.comedy input:checked + span{background-color: #1BB8F7;}
-.crime input:checked + span{background-color: #D9D65D;}
-.history input:checked + span{background-color: #82D44E;}
-.reality input:checked + span{background-color: #F3A4CF;}
-.news input:checked + span{background-color: #8C1B1B;}
-.scifi input:checked + span{background-color: #AC9BD1;}
-.sports input:checked + span{background-color: #214A09;}
+
 
 .form-group {
 position: relative;
@@ -415,7 +410,7 @@ top: 0.25rem;
 float: left;
 pointer-events: none;
 z-index: 1;
-color: white;
+color: #9e9e9e;
 font-size: 1rem;
 font-weight: normal;
 -webkit-transition: all 0.28s ease;
@@ -443,7 +438,7 @@ width: 0;
 left: 50%;
 bottom: -0.0625rem;
 position: absolute;
-background: var(--color-2);
+background: #ff9800;
 -webkit-transition: left 0.28s ease, width 0.28s ease;
 transition: left 0.28s ease, width 0.28s ease;
 z-index: 2;
@@ -481,7 +476,7 @@ display: none;
 .form-group input:valid,
 .form-group input.form-file,
 .form-group input.has-value {
-color: white;
+color: #333;
 }
 
 .form-group input:focus ~ .control-label,
@@ -499,7 +494,7 @@ outline: none;
 }
 
 .form-group input:focus ~ .control-label {
-color: var(--color-2);
+color: #ff9800;
 }
 
 .fab .form-group input:focus ~ .control-label {
@@ -509,6 +504,21 @@ color: #fff;
 .form-group input:focus ~ .bar::before {
 width: 100%;
 left: 0;
+}
+
+.button {
+position: relative;
+background: #ff9800;
+border: 1px solid #ff9800;
+font-size: 1.1rem;
+color: #4f93ce;
+margin: 3rem 0;
+padding: 0.75rem 3rem;
+cursor: pointer;
+-webkit-transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+overflow: hidden;
+box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
 .fab .button {
@@ -527,6 +537,36 @@ z-index: 1;
 color: #ff9800;
 }
 
+.button::before {
+content: '';
+position: absolute;
+background: #071017;
+border: 50vh solid #1d4567;
+width: 30vh;
+height: 30vh;
+border-radius: 50%;
+display: block;
+top: 50%;
+left: 50%;
+z-index: 0;
+opacity: 1;
+-webkit-transform: translate(-50%, -50%) scale(0);
+transform: translate(-50%, -50%) scale(0);
+}
+
+.button:hover {
+color: #337ab7;
+box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+}
+
+.button:focus {
+outline: none;
+}
+
+
+.btn-send{
+  margin-top: 70px;
+}
 
 .btn-projects a {
 color: white;
@@ -570,7 +610,7 @@ color: white;
 
 @media only screen and (min-width: 1800px) {
   #third-page .container{
-      margin-left: 25%;
+      margin-left: 20%;
       float: none;
   }
 }
@@ -635,6 +675,18 @@ color: white;
 
 
 /*mobile*/
+@media only screen and (max-width: 494px) {
+  .form-group input {
+    margin-top: 30px;
+    }
+  .btn-send{
+    margin-top: 30px;
+  }
+  .SDS{
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 376px) {
   .slider-card{
     height:350px;
@@ -665,14 +717,3 @@ color: white;
     margin-top: 30px;
   }
 }
-@media only screen and (max-width: 494px) {
-  .form-group input {
-    margin-top: 30px;
-    }
-  .btn-send{
-    margin-top: 30px;
-  }
-}
-
-
-
