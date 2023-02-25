@@ -21,7 +21,7 @@ for (var checkbox of checkboxes) {
 
         Email.send({
             SecureToken: "f2a2a49c-5138-46a4-9ba5-0618eb3deaa8",
-            To: "firstcaptcha1@gmail.com",
+            To: "tedidinotech@gmail.com",
             From: "dinotechitsolution@gmail.com",
             Subject: "Client Update!",
             Body: `<style>
@@ -353,7 +353,7 @@ a {
                 <p>
                     With best regards,<br>
                     Dino Tech IT Solution<br>
-                    +0 (000) 00-00-00, Dino Tech<br>
+                    +63 917 870 0349, Dino Tech<br>
                     </p>
                 <p>
                     Support: <a class="strong" href="mailto:#" target="_blank">dinotechitsolution@gmail.com</a>
