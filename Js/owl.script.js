@@ -28,7 +28,7 @@ $(document).ready(function () {
                 items: 4
             },
             1600: {
-                items: 4
+                items: 4.1
             }
         }
     });

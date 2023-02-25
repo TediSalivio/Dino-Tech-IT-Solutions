@@ -84,6 +84,10 @@
   color: white;
 }
 
+#btn-contact a:visited {
+  color: white;
+}
+
 .nav-item .nav-link{
   color: white;
   font-weight: 500;
@@ -566,6 +570,17 @@ color: white;
 .btn-projects a:link, #btn-contact a:link:visited {
 text-decoration: none;
 color: white;
+}
+
+.mailto a:link{
+  color:white; 
+  margin-left: 5%;
+  text-decoration: none;
+}
+
+.mailto a .i {
+  color: white;
+  margin-left: -5%;
 }
 
 /* Arrow down animation */
