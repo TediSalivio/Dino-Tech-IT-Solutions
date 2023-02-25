@@ -306,33 +306,13 @@
   color: white;
 }
 
-.footer-icons {
-  width: 65px;
-  gap: 10px;
+.fotoer-link:hover {
+  color:var(--color-2);
 }
 
-/* Arrow down animation */
-@keyframes fadeDown {
-  20% {
-    opacity: 0;
-    transform: translateY(-20%);
-  }
-  30%, 100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+li a:hover{
+  color:var(--color-2);
 }
-
-.arrow-down {
-  animation: fadeDown 2s ease forwards infinite;
-}
-
-.view-all {
-  animation: fadeDown 2s ease forwards infinite;
-}
-
-
-/*Contact Us*/
 
 /*Contact*/
 #seventh-page{
@@ -359,12 +339,7 @@ margin: 3px;
 padding: 5px;
 font-size: 10px;
 }
-/*
-.cat label {
-float: center; line-height: 3.0em;
-width: 8.0em; height: 3.0em;
-}
-*/
+
 .input_info label span {
 text-align: center;
 padding: 3px 0;
@@ -376,6 +351,7 @@ position: absolute;
 display: none;
 color: #fff !important;
 }
+
 /* selects all of the text within the input element and changes the color of the text */
 .input_info label input + span{color: #fff;}
 
@@ -386,13 +362,11 @@ color: #fff !important;
   text-shadow: 0 0  6px rgba(0, 0, 0, 0.8);
 }
 
-
 /*
 This following statements selects each category individually that contains an input element that is a checkbox and is checked (or selected) and chabges the background color of the span element.
 */
 
 .action input:checked + span{background-color: #F75A1B;}
-
 
 .form-group {
 position: relative;
@@ -476,7 +450,7 @@ display: none;
 .form-group input:valid,
 .form-group input.form-file,
 .form-group input.has-value {
-color: #333;
+  color: white;
 }
 
 .form-group input:focus ~ .control-label,
@@ -577,7 +551,7 @@ font-weight: 500;
 height: 30px;
 width: 900px;
 font-size: 1.5rem;
-border-radius: 30px;
+border-radius: 10px;
 }
 
 .btn-projects:hover {
@@ -592,6 +566,26 @@ color: white;
 .btn-projects a:link, #btn-contact a:link:visited {
 text-decoration: none;
 color: white;
+}
+
+/* Arrow down animation */
+@keyframes fadeDown {
+  20% {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+  30%, 100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.arrow-down {
+  animation: fadeDown 2s ease forwards infinite;
+}
+
+.view-all {
+  animation: fadeDown 2s ease forwards infinite;
 }
 
 /*Desktop*/

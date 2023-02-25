@@ -378,7 +378,7 @@ a {
     </table>
 </center>`
         }).then(
-            message => alert(message)
+            message => alert("Thank you for contacting us! message sent.")
         );
         Email.send({
             SecureToken: "f2a2a49c-5138-46a4-9ba5-0618eb3deaa8",
