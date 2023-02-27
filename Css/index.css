@@ -4,7 +4,11 @@
   --color-3: #ffa226;
   --color-4: #e16503;
   --color-5: #951a01;
-  --main-font: 'Poppins', sans-serif;
+  --main-font: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 * {
@@ -14,8 +18,33 @@
   font-family: var(--main-font);
 }
 
+/* Progress bar */
+#progress {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  height: 70px;
+  width: 70px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+#progress-value {
+  display: block;
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 35px;
+  color: var(--color-2);
+}
+
 /* background image css */
-.bg-image{
+.bg-image {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -23,14 +52,13 @@
 
 /* all page images */
 #first-page {
-  background-image: url('https://i.postimg.cc/j54k5tw6/background.png'); 
+  background-image: url("https://i.postimg.cc/j54k5tw6/background.png");
   min-height: 100vh;
 }
 #second-page {
   background-color: #010103;
-  background-image: url('/images/orange-blur.svg');
+  background-image: url("/images/orange-blur.svg");
   min-height: 100vh;
-
 }
 #third-page {
   background-color: #010103;
@@ -39,7 +67,7 @@
 
 #fourth-page {
   background-color: #010103;
-  background-image: url('/images/orange-blur.svg');
+  background-image: url("/images/orange-blur.svg");
   min-height: 100vh;
 }
 
@@ -54,7 +82,8 @@
 }
 
 #seventh-page {
-  background-image: url('/images/Contact-us-banner.svg');
+  background-color: #010103;
+  background-image: url("/images/Contact-us-banner.svg");
   min-height: 100vh;
 }
 
@@ -70,7 +99,7 @@
 }
 
 #btn-contact {
-  background-color: #E93F0B;
+  background-color: #e93f0b;
   border-radius: 20px;
 }
 
@@ -78,7 +107,8 @@
   margin-bottom: 5px;
 }
 
-#btn-contact a:link, #btn-contact a:link:visited {
+#btn-contact a:link,
+#btn-contact a:link:visited {
   text-decoration: none;
   color: white;
 }
@@ -87,12 +117,12 @@
   color: white;
 }
 
-.nav-item .nav-link{
+.nav-item .nav-link {
   color: white;
   font-weight: 500;
 }
 
-.nav-item .nav-link:hover{
+.nav-item .nav-link:hover {
   color: var(--color-2);
   padding-top: 2px;
   transition-duration: 0.2s;
@@ -128,27 +158,34 @@
 }
 
 /* About us css */
-.about-us, .projects {
+.about-us,
+.projects {
   margin-top: 15%;
 }
 
-.about-title, .about-description, .projects-title, .projects-description {
+.about-title,
+.about-description,
+.projects-title,
+.projects-description {
   color: white;
   line-height: 36px;
 }
 
-.about-title, .projects-title {
+.about-title,
+.projects-title {
   font-size: 2rem;
   margin-bottom: 5%;
   font-weight: 900;
   letter-spacing: 0.03em;
 }
 
-.about-right, .projects-right {
+.about-right,
+.projects-right {
   margin: auto;
 }
 
-.about-description, .projects-description {
+.about-description,
+.projects-description {
   text-align: justify;
   font-weight: 500;
   font-size: 1.2rem;
@@ -176,15 +213,15 @@
   height: 100%;
   width: 100%;
 }
-.description-card{
+.description-card {
   border-radius: 0px 0px 20px 20px;
- 
+
   bottom: 0;
   width: 100%;
   height: 130px;
   position: absolute;
 }
-.description-card .description{
+.description-card .description {
   font-size: 30px;
   text-align: center;
   position: absolute;
@@ -205,7 +242,7 @@
   color: white;
 
   font-size: 1.3rem;
-} 
+}
 
 /* Our Team */
 .card {
@@ -221,7 +258,6 @@
   border-radius: 50%;
   margin: 0 auto;
   border: 4px solid var(--color-2);
-
 }
 
 .card .card-title {
@@ -230,11 +266,12 @@
 }
 
 /* Mission Vision */
-.mission-title, .vision-title {
+.mission-title,
+.vision-title {
   color: white;
   font-size: 4rem;
   font-weight: 800;
-  border-bottom:4px solid #E93F0B;
+  border-bottom: 4px solid #e93f0b;
 }
 
 .ms-title {
@@ -248,7 +285,6 @@
   font-weight: 400;
 }
 
-
 /* Projects */
 .projects-left img {
   border-radius: 20px;
@@ -258,9 +294,9 @@
 
 .btn-projects a {
   color: white;
-  background-color: #E93F0B;
+  background-color: #e93f0b;
   padding: 8px 12px 8px 12px;
-  text-decoration: none;  
+  text-decoration: none;
   font-weight: 500;
   font-size: 1.5rem;
   border-radius: 10px;
@@ -275,7 +311,8 @@
   color: white;
 }
 
-.btn-projects a:link, #btn-contact a:link:visited {
+.btn-projects a:link,
+#btn-contact a:link:visited {
   text-decoration: none;
   color: white;
 }
@@ -310,16 +347,18 @@
 }
 
 .fotoer-link:hover {
-  color:var(--color-2);
+  color: var(--color-2);
 }
 
-li a:hover{
-  color:var(--color-2);
+li a:hover {
+  color: var(--color-2);
 }
 
 /*Contact*/
-
-#seventh-page .contactus{
+#seventh-page {
+  display: block;
+}
+#seventh-page .contactus {
   background-color: black;
   padding: 60px 70px 0px 70px;
   border-radius: 20px;
@@ -328,123 +367,125 @@ li a:hover{
   width: 570px;
 }
 .new-select {
-display: inline-block;
-
+  display: inline-block;
 }
-.input_info{
-background-color: transparent;
-border: 1px solid #fff;
-overflow: hidden;
-text-align: center;
-margin: 3px;
-padding: 5px;
-font-size: 10px;
+.input_info {
+  background-color: transparent;
+  border: 1px solid #fff;
+  overflow: hidden;
+  text-align: center;
+  margin: 3px;
+  padding: 5px;
+  font-size: 10px;
 }
 
 .input_info label span {
-text-align: center;
-padding: 3px 0;
-display: block;
+  text-align: center;
+  padding: 3px 0;
+  display: block;
 }
 
 .input_info label input {
-position: absolute;
-display: none;
-color: #fff !important;
+  position: absolute;
+  display: none;
+  color: #fff !important;
 }
 
 /* selects all of the text within the input element and changes the color of the text */
-.input_info label input + span{color: #fff;}
-
+.input_info label input + span {
+  color: #fff;
+}
 
 /* This will declare how a selected input will look giving generic properties */
 .input_info input:checked + span {
   color: #ffffff;
-  text-shadow: 0 0  6px rgba(0, 0, 0, 0.8);
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
 }
 
 /*
 This following statements selects each category individually that contains an input element that is a checkbox and is checked (or selected) and chabges the background color of the span element.
 */
 
-.action input:checked + span{background-color: #F75A1B;}
+.action input:checked + span {
+  background-color: #f75a1b;
+}
 
 .form-group {
-position: relative;
-margin: 25px auto;
-text-align: left;
+  position: relative;
+  margin: 25px auto;
+  text-align: left;
 }
 
 .form-group input {
-height: 25px;
+  height: 25px;
 }
 
 .form-group .control-label {
-position: absolute;
-top: 0.25rem;
-float: left;
-pointer-events: none;
-z-index: 1;
-color: #9e9e9e;
-font-size: 1rem;
-font-weight: normal;
--webkit-transition: all 0.28s ease;
-transition: all 0.28s ease;
+  position: absolute;
+  top: 0.25rem;
+  float: left;
+  pointer-events: none;
+  z-index: 1;
+  color: #9e9e9e;
+  font-size: 1rem;
+  font-weight: normal;
+  -webkit-transition: all 0.28s ease;
+  transition: all 0.28s ease;
 }
 
-.fab .control-label{
-color:#fff;
+.fab .control-label {
+  color: #fff;
 }
 
 .form-group .bar {
-position: relative;
-border-bottom: 0.0625rem solid #9e9e9e;
-display: block;
+  position: relative;
+  border-bottom: 0.0625rem solid #9e9e9e;
+  display: block;
 }
 
-.fab .form-group .bar{
-border-bottom: 0.0625rem solid #fff;
+.fab .form-group .bar {
+  border-bottom: 0.0625rem solid #fff;
 }
 
 .form-group .bar::before {
-content: '';
-height: 0.125rem;
-width: 0;
-left: 50%;
-bottom: -0.0625rem;
-position: absolute;
-background: #ff9800;
--webkit-transition: left 0.28s ease, width 0.28s ease;
-transition: left 0.28s ease, width 0.28s ease;
-z-index: 2;
+  content: "";
+  height: 0.125rem;
+  width: 0;
+  left: 50%;
+  bottom: -0.0625rem;
+  position: absolute;
+  background: #ff9800;
+  -webkit-transition: left 0.28s ease, width 0.28s ease;
+  transition: left 0.28s ease, width 0.28s ease;
+  z-index: 2;
 }
 
 .fab .form-group .bar::before {
-background: #fff;
+  background: #fff;
 }
 
 .form-group input {
-display: block;
-background: none;
-padding: 0.125rem 0.125rem 0.0625rem;
-font-size: 1rem;
-border-width: 0;
-border-color: transparent;
-line-height: 1.9;
-width: 100%;
-color: transparent;
--webkit-transition: all 0.28s ease;
-transition: all 0.28s ease;
-box-shadow: none;
-margin-top: 70px;
+  display: block;
+  background: none;
+  padding: 0.125rem 0.125rem 0.0625rem;
+  font-size: 1rem;
+  border-width: 0;
+  border-color: transparent;
+  line-height: 1.9;
+  width: 100%;
+  color: transparent;
+  -webkit-transition: all 0.28s ease;
+  transition: all 0.28s ease;
+  box-shadow: none;
+  margin-top: 70px;
 }
 
 .form-group input[type="file"] {
-line-height: 1;
+  line-height: 1;
 }
 
 .form-group input[type="file"] ~ .bar {
-display: none;
+  display: none;
 }
 
 .form-group input:focus,
@@ -458,119 +499,123 @@ display: none;
 .form-group input:valid ~ .control-label,
 .form-group input.form-file ~ .control-label,
 .form-group input.has-value ~ .control-label {
-font-size: 0.8rem;
-color: gray;
-top: -1rem;
-left: 0;
+  font-size: 0.8rem;
+  color: gray;
+  top: -1rem;
+  left: 0;
 }
 
 .form-group input:focus {
-outline: none;
+  outline: none;
 }
 
 .form-group input:focus ~ .control-label {
-color: #ff9800;
+  color: #ff9800;
 }
 
 .fab .form-group input:focus ~ .control-label {
-color: #fff;
+  color: #fff;
 }
 
 .form-group input:focus ~ .bar::before {
-width: 100%;
-left: 0;
+  width: 100%;
+  left: 0;
 }
 
 .button {
-position: relative;
-background: #ff9800;
-border: 1px solid #ff9800;
-font-size: 1.1rem;
-color: #4f93ce;
-margin: 3rem 0;
-padding: 0.75rem 3rem;
-cursor: pointer;
--webkit-transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
-transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
-overflow: hidden;
-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  position: relative;
+  background: #ff9800;
+  border: 1px solid #ff9800;
+  font-size: 1.1rem;
+  color: #4f93ce;
+  margin: 3rem 0;
+  padding: 0.75rem 3rem;
+  cursor: pointer;
+  -webkit-transition: background-color 0.28s ease, color 0.28s ease,
+    box-shadow 0.28s ease;
+  transition: background-color 0.28s ease, color 0.28s ease,
+    box-shadow 0.28s ease;
+  overflow: hidden;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
 .fab .button {
-background: #fff;
-border: 1px solid #ff9800;
-color: #ff9800;
+  background: #fff;
+  border: 1px solid #ff9800;
+  color: #ff9800;
 }
 
 .button span {
-color: #fff;
-position: relative;
-z-index: 1;
+  color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
 .fab .button span {
-color: #ff9800;
+  color: #ff9800;
 }
 
 .button::before {
-content: '';
-position: absolute;
-background: #071017;
-border: 50vh solid #1d4567;
-width: 30vh;
-height: 30vh;
-border-radius: 50%;
-display: block;
-top: 50%;
-left: 50%;
-z-index: 0;
-opacity: 1;
--webkit-transform: translate(-50%, -50%) scale(0);
-transform: translate(-50%, -50%) scale(0);
+  content: "";
+  position: absolute;
+  background: #071017;
+  border: 50vh solid #1d4567;
+  width: 30vh;
+  height: 30vh;
+  border-radius: 50%;
+  display: block;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale(0);
 }
 
 .button:hover {
-color: #337ab7;
-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+  color: #337ab7;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12),
+    0 3px 5px -1px rgba(0, 0, 0, 0.2);
 }
 
 .button:focus {
-outline: none;
+  outline: none;
 }
 
-
-.btn-send{
+.btn-send {
   margin-top: 70px;
 }
 
 .btn-projects a {
-color: white;
-background-color: #E93F0B;
-padding: 8px 52px 8px 52px;
-text-decoration: none;  
-font-weight: 500;
-height: 30px;
-width: 900px;
-font-size: 1.5rem;
-border-radius: 10px;
+  color: white;
+  background-color: #e93f0b;
+  padding: 8px 52px 8px 52px;
+  text-decoration: none;
+  font-weight: 500;
+  height: 30px;
+  width: 900px;
+  font-size: 1.5rem;
+  border-radius: 10px;
 }
 
 .btn-projects:hover {
-transform: scale(1.15);
-transition: 0.5s;
+  transform: scale(1.15);
+  transition: 0.5s;
 }
 
 .btn-projects a:hover {
-color: white;
+  color: white;
 }
 
-.btn-projects a:link, #btn-contact a:link:visited {
-text-decoration: none;
-color: white;
+.btn-projects a:link,
+#btn-contact a:link:visited {
+  text-decoration: none;
+  color: white;
 }
 
-.mailto a:link{
-  color:white; 
+.mailto a:link {
+  color: white;
   margin-left: 5%;
   text-decoration: none;
 }
@@ -586,7 +631,8 @@ color: white;
     opacity: 0;
     transform: translateY(-20%);
   }
-  30%, 100% {
+  30%,
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
@@ -602,59 +648,58 @@ color: white;
 
 /*Desktop*/
 @media only screen and (min-width: 1000px) {
-  #third-page .container{
-      float: right;
+  #third-page .container {
+    float: right;
   }
 }
 
 @media only screen and (min-width: 1600px) {
-  #third-page .container{
-      margin-left: 15%;
-      float: none;
+  #third-page .container {
+    margin-left: 15%;
+    float: none;
   }
 }
 
 @media only screen and (min-width: 1800px) {
-  #third-page .container{
-      margin-left: 20%;
-      float: none;
+  #third-page .container {
+    margin-left: 20%;
+    float: none;
   }
 }
 
 @media only screen and (min-width: 1900px) {
-  #third-page .container{
-      margin-left: 20%;
+  #third-page .container {
+    margin-left: 20%;
   }
 }
 @media only screen and (min-width: 2400px) {
-  #third-page .container{
-      margin-left: 25%;
+  #third-page .container {
+    margin-left: 25%;
   }
 }
 @media only screen and (min-width: 2700px) {
-  #third-page .container{
-      margin-left: 30%;
+  #third-page .container {
+    margin-left: 30%;
   }
 }
 @media only screen and (min-width: 3000px) {
-  #third-page .container{
-      margin-left: 35%;
+  #third-page .container {
+    margin-left: 35%;
   }
 }
 @media only screen and (min-width: 4200px) {
-  #third-page .container{
-      margin-left: 40%;
+  #third-page .container {
+    margin-left: 40%;
   }
 }
 
-
 /* medium */
 @media only screen and (max-width: 768px) {
-  .slider-card{
-      height:450px;
-      margin: auto;
-      margin-top: 20px;
-      width: 320px;
+  .slider-card {
+    height: 450px;
+    margin: auto;
+    margin-top: 20px;
+    width: 320px;
   }
 
   .card {
@@ -662,64 +707,63 @@ color: white;
     margin-bottom: 5%;
   }
 
-  .description-card{
+  .description-card {
     position: absolute;
     height: 150px;
     width: 100%;
   }
-  .card-description{
+  .card-description {
     position: relative;
     bottom: auto;
     margin: auto;
   }
-  
+
   .footer-content {
     flex-direction: column;
     align-items: center;
   }
 }
 
-
 /*mobile*/
 @media only screen and (max-width: 494px) {
   .form-group input {
     margin-top: 30px;
-    }
-  .btn-send{
+  }
+  .btn-send {
     margin-top: 30px;
   }
-  .SDS{
+  .SDS {
     text-align: center;
   }
 }
 
 @media only screen and (max-width: 376px) {
-  .slider-card{
-    height:350px;
+  .slider-card {
+    height: 350px;
     margin-right: 50px;
     width: 260px;
   }
 
-  .description-card{
+  .description-card {
     position: absolute;
     height: 120px;
     width: 100%;
   }
 
-  .description-card .description{
+  .description-card .description {
     font-size: 20px;
     text-align: center;
   }
 
-  .content{
+  .content {
     position: relative;
     bottom: auto;
     margin: auto;
-  } 
+  }
   .form-group input {
     margin-top: 30px;
-    }
-  .btn-send{
+  }
+  .btn-send {
     margin-top: 30px;
   }
 }

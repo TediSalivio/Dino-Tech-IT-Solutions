@@ -1,30 +1,30 @@
 var values = [];
-var checkboxes = document.querySelectorAll('.checkbox');
+var checkboxes = document.querySelectorAll(".checkbox");
 
 for (var checkbox of checkboxes) {
-    checkbox.addEventListener('click', function () {
-        if (this.checked == true) {
-            values.push(this.value);
-            document.getElementById('getVal').innerHTML = values.toString();
-        } else {
-            values = values.filter(e => e !== this.value);
-            document.getElementById('getVal').innerHTML = values.toString();
-        }
-    })
+  checkbox.addEventListener("click", function () {
+    if (this.checked == true) {
+      values.push(this.value);
+      document.getElementById("getVal").innerHTML = values.toString();
+    } else {
+      values = values.filter((e) => e !== this.value);
+      document.getElementById("getVal").innerHTML = values.toString();
+    }
+  });
 
-    function sendContact() {
+  function sendContact() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+    var interested = document.getElementById("getVal").value;
 
-        var name = document.getElementById("name").value;
-        var email = document.getElementById("email").value;
-        var message = document.getElementById("message").value;
-        var interested = document.getElementById('getVal').value;
-
-        Email.send({
-            SecureToken: "f2a2a49c-5138-46a4-9ba5-0618eb3deaa8",
-            To: "tedidinotech@gmail.com",
-            From: "dinotechitsolution@gmail.com",
-            Subject: "Client Update!",
-            Body: `<style>
+    Email.send({
+      SecureToken: "f2a2a49c-5138-46a4-9ba5-0618eb3deaa8",
+      To: "dinotechitsolution@gmail.com",
+      From: "dinotechitsolution@gmail.com",
+      Subject: "Client Update!",
+      Body:
+        `<style>
     body {
         margin: 0;
         padding: 0;
@@ -315,22 +315,30 @@ a {
                           <table style="width:100%">
                           <tr>
                             <td><strong>Interested</strong></td>
-                            <td>` + interested + `</td>
+                            <td>` +
+        interested +
+        `</td>
                           </tr>
                           <tr>
                             <td><strong>Name</strong></td>
-                            <td>` + name + `</td>
+                            <td>` +
+        name +
+        `</td>
                           </tr>
                           <tr>
                             <td><strong>Email<strong></td>
-                            <td>` + email + `</td>
+                            <td>` +
+        email +
+        `</td>
                           </tr>
                           <tr>
                             <td><strong>Message</strong></td>
                             <td></td>
                           </tr>
                         </table><br>
-                          <p class="caption">` + message + `</p>
+                          <p class="caption">` +
+        message +
+        `</p>
                         </td>
                     </tr>
                     </tbody>
@@ -376,16 +384,14 @@ a {
         </tr>
         </tbody>
     </table>
-</center>`
-        }).then(
-            message => alert("Thank you for contacting us! message sent.")
-        );
-        Email.send({
-            SecureToken: "f2a2a49c-5138-46a4-9ba5-0618eb3deaa8",
-            To: email,
-            From: "dinotechitsolution@gmail.com",
-            Subject: "Client Update!",
-            Body: `<style type="text/css">  
+</center>`,
+    }).then((message) => alert("Thank you for contacting us! message sent."));
+    Email.send({
+      SecureToken: "f2a2a49c-5138-46a4-9ba5-0618eb3deaa8",
+      To: email,
+      From: "dinotechitsolution@gmail.com",
+      Subject: "Client Update!",
+      Body: `<style type="text/css">  
             @font-face {
             font-family: 'Oxygen';
             font-style: normal;
@@ -485,7 +491,7 @@ a {
               </tr>
             </tbody>
           </table>
-          `
-        })
-    }
+          `,
+    });
+  }
 }
