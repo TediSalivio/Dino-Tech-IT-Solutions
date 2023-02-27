@@ -55,7 +55,6 @@
 
 #seventh-page {
   background-image: url('/images/Contact-us-banner.svg');
-  background-size: cover;
   min-height: 100vh;
 }
 
@@ -319,9 +318,7 @@ li a:hover{
 }
 
 /*Contact*/
-#seventh-page{
-  display: block;
-}
+
 #seventh-page .contactus{
   background-color: black;
   padding: 60px 70px 0px 70px;
