@@ -52,7 +52,7 @@ html {
 
 /* all page images */
 #first-page {
-  background-image: url("https://i.postimg.cc/j54k5tw6/background.png");
+  background-image: url("/images/background.png");
   min-height: 100vh;
 }
 #second-page {
